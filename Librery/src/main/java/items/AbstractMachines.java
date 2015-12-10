@@ -1,4 +1,4 @@
-package com.hen.id;
+package items;
 
  
 public abstract class AbstractMachines 
@@ -19,6 +19,31 @@ public abstract class AbstractMachines
         this.barode = barode;
         
     }
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getBarode() {
+		return barode;
+	}
+
+	public void setBarode(String barode) {
+		this.barode = barode;
+	}
+
+	public int getPurchesPrice() {
+		return purchesPrice;
+	}
+
+	public void setPurchesPrice(int purchesPrice) {
+		this.purchesPrice = purchesPrice;
+	}
+    
 }
 
 

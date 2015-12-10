@@ -1,4 +1,4 @@
-package com.hen.id;
+package people;
 
  
 public abstract class AbstractPeople 
@@ -21,4 +21,23 @@ public abstract class AbstractPeople
 			     this.name = name;
 			     this.Phone = phone;
 	    }
+			public String getName() {
+				return name;
+			}
+			public void setName(String name) {
+				this.name = name;
+			}
+			public String getId() {
+				return id;
+			}
+			public void setId(String id) {
+				this.id = id;
+			}
+			public String getPhone() {
+				return Phone;
+			}
+			public void setPhone(String phone) {
+				Phone = phone;
+			}
+
 }
