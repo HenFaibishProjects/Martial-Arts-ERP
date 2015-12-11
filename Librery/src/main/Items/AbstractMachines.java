@@ -1,4 +1,4 @@
-package items;
+package Items;
 
  
 public abstract class AbstractMachines 
