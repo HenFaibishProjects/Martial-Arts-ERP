@@ -1,11 +1,11 @@
 
 package offices;
 
-public class premium extends AbstractOffice {
+public class Premium extends AbstractOffice {
 	String houers; 
 	String poolsize;
 	
-	public premium(String name, String type, String Address, String houers, String poolsize) {
+	public Premium(String name, String type, String Address, String houers, String poolsize) {
 		super(name, type, Address);
 		this.houers = houers;
 		this.poolsize = poolsize;
