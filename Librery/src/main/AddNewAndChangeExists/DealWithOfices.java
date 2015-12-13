@@ -1,4 +1,4 @@
-package AddNewAndChangeExist;
+package AddNewAndChangeExists;
 import offices.AbstractOffice;
 import offices.Energy;
 import offices.Premium;
