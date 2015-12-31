@@ -1,47 +1,42 @@
 package Items;
 
- 
-public abstract class Abstractsaleitem 
-{
-    String name; 
+public abstract class Abstractsaleitem {
+	String name;
 	String barode;
 	int purchesPrice;
 
-	
-    public Abstractsaleitem( String name , String barode ,int purchesPrice ) {
-        this.name = name;
-        this.barode = barode;
-        this.purchesPrice = purchesPrice;
-      }
-                  
-	    public Abstractsaleitem( String barode) {
-	    	this.barode = barode;
-    }
+	public Abstractsaleitem(String name, String barode, int purchesPrice) {
+		this.name = name;
+		this.barode = barode;
+		this.purchesPrice = purchesPrice;
+	}
 
-		public String getName() {
-			return name;
-		}
+	public Abstractsaleitem(String barode) {
+		this.barode = barode;
+	}
 
-		public void setName(String name) {
-			this.name = name;
-		}
+	public String getName() {
+		return name;
+	}
 
-		public String getBarode() {
-			return barode;
-		}
+	public void setName(String name) {
+		this.name = name;
+	}
 
-		public void setBarode(String barode) {
-			this.barode = barode;
-		}
+	public String getBarode() {
+		return barode;
+	}
 
-		public int getPurchesPrice() {
-			return purchesPrice;
-		}
+	public void setBarode(String barode) {
+		this.barode = barode;
+	}
 
-		public void setPurchesPrice(int purchesPrice) {
-			this.purchesPrice = purchesPrice;
-		}
-	    
+	public int getPurchesPrice() {
+		return purchesPrice;
+	}
+
+	public void setPurchesPrice(int purchesPrice) {
+		this.purchesPrice = purchesPrice;
+	}
+
 }
-
-

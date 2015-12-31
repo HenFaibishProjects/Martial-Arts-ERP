@@ -1,14 +1,16 @@
 package people;
 
 public class Suppliers extends AbstractPeople {
-	char[] WorkingDays ;
+	char[] WorkingDays;
 	int SuplyCode;
-	
-	public Suppliers( String name , String id ,String phone,char[] WorkingDays,int SuplyCode ) {
-	super(name,id,phone);
-	this.WorkingDays = WorkingDays;
-	this.SuplyCode  = SuplyCode;		
-	
+	public static int SupliersCounter = 0;
+
+	public Suppliers(String name, String id, String phone, char[] WorkingDays, int SuplyCode) {
+		super(name, id, phone);
+		this.WorkingDays = WorkingDays;
+		this.SuplyCode = SuplyCode;
+		SupliersCounter += 1;
+
 	}
 
 	public char[] getWorkingDays() {
@@ -26,7 +28,5 @@ public class Suppliers extends AbstractPeople {
 	public void setSuplyCode(int suplyCode) {
 		SuplyCode = suplyCode;
 	}
-		
-		
-	
+
 }

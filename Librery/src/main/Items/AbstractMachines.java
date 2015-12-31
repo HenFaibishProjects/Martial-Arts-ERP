@@ -1,24 +1,21 @@
 package Items;
 
- 
-public abstract class AbstractMachines 
-{
-    String name; 
+public abstract class AbstractMachines {
+	String name;
 	String barode;
 	int purchesPrice;
 
-	
-    public AbstractMachines( String name , String barode ,int purchesPrice ) {
-        this.name = name;
-        this.barode = barode;
-        this.purchesPrice = purchesPrice;
-      }
-                  
-    public AbstractMachines( String name , String barode ) {
-        this.name = name;
-        this.barode = barode;
-        
-    }
+	public AbstractMachines(String name, String barode, int purchesPrice) {
+		this.name = name;
+		this.barode = barode;
+		this.purchesPrice = purchesPrice;
+	}
+
+	public AbstractMachines(String name, String barode) {
+		this.name = name;
+		this.barode = barode;
+
+	}
 
 	public String getName() {
 		return name;
@@ -43,7 +40,5 @@ public abstract class AbstractMachines
 	public void setPurchesPrice(int purchesPrice) {
 		this.purchesPrice = purchesPrice;
 	}
-    
+
 }
-
-

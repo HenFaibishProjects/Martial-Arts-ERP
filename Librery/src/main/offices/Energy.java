@@ -1,12 +1,14 @@
 package offices;
 
 public class Energy extends AbstractOffice {
-	String houers; 
-	
+	String houers;
+	public static int EnergyCounter = 0;
+
 	public Energy(String name, String type, String Address, String houers) {
 		super(name, type, Address);
 		this.houers = houers;
-		
+		EnergyCounter += 1;
+
 	}
 
 	public String getHouers() {
@@ -17,7 +19,4 @@ public class Energy extends AbstractOffice {
 		this.houers = houers;
 	}
 
-
-	 
-	
 }

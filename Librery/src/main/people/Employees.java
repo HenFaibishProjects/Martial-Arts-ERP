@@ -1,14 +1,16 @@
 package people;
 
 public class Employees extends AbstractPeople {
-	String title ;
+	String title;
 	int years;
-	
-	public Employees( String name , String id ,String phone,String title,int years ) {
-	super(name,id,phone);
-	this.title = title;
-	this.years  = years;		
-	
+	public static int EmployeeCounter = 0;
+
+	public Employees(String name, String id, String phone, String title, int years) {
+		super(name, id, phone);
+		this.title = title;
+		this.years = years;
+		EmployeeCounter += 1;
+
 	}
 
 	public String getTitle() {
@@ -27,8 +29,4 @@ public class Employees extends AbstractPeople {
 		this.years = years;
 	}
 
-
-		
-		
-	
 }
