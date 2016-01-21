@@ -1,5 +1,6 @@
 package people;
 
+import people.Action.CustomerAction;
 
 public class Customers extends AbstractPeople implements CustomerAction {
 	int MemberType;

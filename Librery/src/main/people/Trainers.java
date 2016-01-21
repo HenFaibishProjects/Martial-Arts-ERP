@@ -1,11 +1,11 @@
 package people;
 
-public class Employees extends AbstractPeople {
+public class Trainers extends AbstractPeople {
 	String title;
 	int years;
 	public static int EmployeeCounter = 0;
 
-	public Employees(String name, String id, String phone, String title, int years) {
+	public Trainers(String name, String id, String phone, String title, int years) {
 		super(name, id, phone);
 		this.title = title;
 		this.years = years;
