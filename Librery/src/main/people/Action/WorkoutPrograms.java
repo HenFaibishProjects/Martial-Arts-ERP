@@ -1,4 +1,4 @@
-package people;
+package people.Action;
 
 import java.util.HashMap;
 
