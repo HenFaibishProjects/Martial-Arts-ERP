@@ -24,16 +24,22 @@ public class DealWithGym {
 	
 	}
 	
-
-	public void ChangeOfficeAddress(int id,Gym Address) {
+	
+	
+	public void ChangeOfficeAddress(int id,Gym address) {
 		int index = getCategoryPos(id);
-		gymlist.set(index+1, Address);
+		gymlist.set(index+1, address);
 
 	}
 
 	public void ChangeOfficePhone(int id,Gym type) {
 		int index = getCategoryPos(id);
 		gymlist.set(index+1, type);
+		
+		
+		
+		
+		
 
 	}
 
