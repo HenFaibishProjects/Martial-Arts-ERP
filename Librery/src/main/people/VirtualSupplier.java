@@ -1,13 +1,15 @@
 package people;
 
-final class VirtualSupplier extends Suppliers {
+final class VirtualSupplier extends Supplier implements Person, WorkingDays{
+
 	int OwnershipType;
 	public static int VirtualSupliersCounter;
 
-	public VirtualSupplier(String name, String id, String phone, char[] WorkingDays, int SuplyCode, int OwnershipType) {
-		super(name, id, phone, WorkingDays, SuplyCode);
+	
+	public VirtualSupplier(char[] workingDays, int suplyCode, String name, String id, String phone, int OwnershipType) {
+		super(workingDays, suplyCode, name, id, phone);
 		this.OwnershipType = OwnershipType;
-		VirtualSupliersCounter += 1;
+ 		VirtualSupliersCounter += 1;
 
 	}
 }

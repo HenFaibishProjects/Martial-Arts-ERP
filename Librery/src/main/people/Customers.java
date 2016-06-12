@@ -2,17 +2,23 @@ package people;
 
 import people.Action.CustomerAction;
 
-public class Customers extends AbstractPeople implements CustomerAction {
+public class Customers implements Person, CustomerAction {
+	String title;
 	int MemberType;
 	int age;
 	int high;
 	char gender;
 	public static int ClientsCounter = 0;
+	private final String name;
+	private final String id;
+	private final String phone;
 
-	public Customers(String name, String id, String phone, int MemberType) {
-		super(name, id, phone);
+	public Customers(String title ,int MemberType,int age,int high,char gender,String name, String id, String phone) {
 		this.MemberType = MemberType;
 		ClientsCounter += 1;
+		this.name = name;
+		this.id = id;
+		this.phone = phone;
 
 	}
 
@@ -59,6 +65,19 @@ public class Customers extends AbstractPeople implements CustomerAction {
 
 	        String CalcResult = low + " " + medium + " " + max;	        
 	        return CalcResult;
+	}
+
+
+	public String getName() {
+		return this.name;
+	}
+
+	public String getId() {
+		return this.id;
+	}
+
+	public String getPhone() {
+		return this.phone;
 	}
 
 
