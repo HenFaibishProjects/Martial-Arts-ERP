@@ -1,6 +1,7 @@
 package people;
 
-import people.Action.CustomerAction;
+import people.InterFaces.CustomerAction;
+import people.InterFaces.Person;
 
 public class Customers implements Person, CustomerAction {
 	String title;
@@ -9,9 +10,9 @@ public class Customers implements Person, CustomerAction {
 	int high;
 	char gender;
 	public static int ClientsCounter = 0;
-	private final String name;
-	private final String id;
-	private final String phone;
+	private String name;
+	private String id;
+	private String phone;
 
 	public Customers(String title ,int MemberType,int age,int high,char gender,String name, String id, String phone) {
 		this.MemberType = MemberType;
@@ -80,6 +81,21 @@ public class Customers implements Person, CustomerAction {
 		return this.phone;
 	}
 
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+
+	}
 
 	}
 

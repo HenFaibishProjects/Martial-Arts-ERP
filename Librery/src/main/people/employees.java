@@ -1,11 +1,15 @@
 package people;
 
+import people.InterFaces.Person;
+import people.InterFaces.WorkingDays;
+
 public class employees implements Person, WorkingDays{
+
 	private final char[] WorkingDays;
 	private final int SuplyCode;
-	private final String name;
-	private final String id;
-	private final String phone;
+	private String name;
+	private String id;
+	private String phone;
 
 	
 
@@ -35,6 +39,21 @@ public class employees implements Person, WorkingDays{
 
 	public char[] getWorkingDays() {		
 		return this.WorkingDays;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+
 	}
 
 	}

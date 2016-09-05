@@ -1,6 +1,10 @@
 package people;
 
-final class VirtualSupplier extends Supplier implements Person, WorkingDays{
+import people.InterFaces.CustomerAction;
+import people.InterFaces.Person;
+import people.InterFaces.WorkingDays;
+
+public final class VirtualSupplier extends Supplier implements Person, CustomerAction{  
 
 	int OwnershipType;
 	public static int VirtualSupliersCounter;
@@ -11,5 +15,19 @@ final class VirtualSupplier extends Supplier implements Person, WorkingDays{
 		this.OwnershipType = OwnershipType;
  		VirtualSupliersCounter += 1;
 
+	}
+
+
+	@Override
+	public double CalcBMI(double weight, double height) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public String CalcHeartBit(double age) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

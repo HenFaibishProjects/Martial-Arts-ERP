@@ -1,4 +1,4 @@
-package people.Action;
+package people.InterFaces;
 
 public interface CustomerAction {
 

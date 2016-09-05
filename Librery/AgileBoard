@@ -1,0 +1,36 @@
+Things to do:
+
+
+Sprint 1:
+1.add modification to all dao
+2.implement modification to all daoimpl
+
+
+
+
+Sprint 2:
+Manage Items with:
+1.Abstract class + inheritance to items according to BASHGAL (Enums and new data types) 
+2.method to manage items
+
+
+
+
+Sprint 3:
+1.data layer to items
+2.add and implement add/Delete to all daoimpl
+2.add and implement modification to all daoimpl
+
+
+
+
+
+Sprint 4:
+
+
+
+
+
+
+
+
