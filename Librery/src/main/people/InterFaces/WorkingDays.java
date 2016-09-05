@@ -1,4 +1,4 @@
-package people;
+package people.InterFaces;
 
 public interface WorkingDays {
 
